@@ -17,7 +17,8 @@
 
 - Check có 1 sub-domain đó là ```stock``` có, bây giờ còn 1 cách để nó hiển thị khi victim access vào đó là sử dụng lỗi XSS 
  ```<script>alert(1)</script>```
- ![image](https://hackmd.io/_uploads/BJBbkMyFT.png)
+![image](https://github.com/vanniichan/Portswigger/assets/112863484/2f5034f0-b5e6-40d6-a138-50c3196d7c5d)
+
 
  - Chạy được, từ đó ốp payload lợi dụng lỗ hổng này
 
