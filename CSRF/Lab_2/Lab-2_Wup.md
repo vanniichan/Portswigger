@@ -6,7 +6,7 @@
 - Dựa vào 3 điều kiện có thể xảy ra CSRF ta có thỏa mãn cả 3:
    + Có function liên quan 
    + Có session dựa vào cookie
-   + Không có parameter trước request
+   + Có parameter csrf ở Request
 
 - Đầu tiên ta sẽ thử với case method `GET`
 
