@@ -19,6 +19,6 @@
 ## 1. CSRF token
   - Là 1 mã duy nhất tạo ra từ phía máy chủ được gửi cho khách hàng để trả lại cho máy chủ. Tức là không thể đoán được và khi trả lại không đúng sẽ bị từ chối request
   - Các dấu hiệu nhận biết
-    + Validate input thường chỉ đúng với method ```POST``` nhưng lại quên validate method ```GET```
-    + CSRF token không bắt buộc sau khi send Request
-    + 
+    + Validate input thường chỉ đúng với method ```POST``` nhưng lại quên validate method ```GET``` (Lab 2)
+    + CSRF token không bắt buộc sau khi send Request (Lab 3)
+    + CSRF token không liên quan đến session (Lab 4)
