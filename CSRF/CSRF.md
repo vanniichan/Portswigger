@@ -1,6 +1,7 @@
 # Define
-![image](https://hackmd.io/_uploads/ryzM59yK6.png)
-![image](https://hackmd.io/_uploads/HkNcT9yFT.png)
+![image](https://github.com/vanniichan/Portswigger/assets/112863484/10465f5a-bb46-4448-9f30-35e69f17c926)
+
+![image](https://github.com/vanniichan/Portswigger/assets/112863484/d3ad307e-de17-41a3-93a1-4c3108939922)
 
 # XSS vs CSRF
 
