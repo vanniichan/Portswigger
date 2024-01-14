@@ -10,8 +10,7 @@
 
 - Đầu tiên ta sẽ thử xóa CSRF token xem nó có chấp nhận không
 
-![image](https://hackmd.io/_uploads/B1JlQmWKp.png)
-
+![image](https://github.com/vanniichan/Portswigger/assets/112863484/aacf2001-f061-4f87-9e68-eaaffb8fa9c9)
     
 - Send Request và Respond về 302 tức là CSRF token là không bắt buộc
 
