@@ -12,7 +12,7 @@
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/367b2ec6-c25b-4531-b791-3f6008252d72)
     
-- Send Request và Respond về 302 tức là đã thành công vì nó không ảnh hưởng đến parameter mình sửa
+- Send Request và Respond về 302 tức là đã thành công 
 
 - Từ đây lấy payload có sẵn của Burp, sửa mail và gửi vào server exploit để hoàn thành bài lab 
     
