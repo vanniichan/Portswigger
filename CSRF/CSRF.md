@@ -22,3 +22,6 @@
     + Validate input thường chỉ đúng với method ```POST``` nhưng lại quên validate method ```GET``` (Lab 2)
     + CSRF token không bắt buộc sau khi send Request (Lab 3)
     + CSRF token không liên quan đến session (Lab 4)
+## 2. SameSite cookie restrictions
+`Sự khác nhau của Site và Origin`
+![image](https://github.com/vanniichan/Portswigger/assets/112863484/62eedb6a-96f1-4192-8e55-7ea29433f92c)
