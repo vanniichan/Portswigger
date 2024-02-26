@@ -12,3 +12,5 @@
 -file_put_contents()
 -include()
 ...
+3. Burp pro có chức năng ở ``Intruder`` để fuzzing Path Traversal
+![image](https://github.com/vanniichan/Portswigger/assets/112863484/cfdc5a65-69f8-47bf-ba7a-54c26bceb7d5)
