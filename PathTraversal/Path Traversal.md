@@ -14,3 +14,8 @@
 ...
 3. Burp pro có chức năng ở ``Intruder`` để fuzzing Path Traversal
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/cfdc5a65-69f8-47bf-ba7a-54c26bceb7d5)
+
+# File path traversal, validation of file extension with null byte bypass
+"Null Byte Injection" hoặc "Null Byte Poisoning" là khi attacker thao túng một đầu vào tệp bằng cách thêm một byte null (\x00) vào tên tệp. Byte null này có thể hiệu quả chấm dứt chuỗi tên tệp, làm cho ứng dụng hiểu sai tên tệp.
+
+Ví dụ `malicious.png\x00.php` thực chất là file php nhưng ứng dụng sẽ hiểu đây là file png
