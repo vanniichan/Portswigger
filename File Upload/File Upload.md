@@ -24,4 +24,5 @@ Tạo 1 file ảnh nhưng có payload là file php, một số tiêu đề có t
 
 Open image in new tab -->
 
-Flag: `bpUrmh8hkya7p3ST5vhAzWTuUrJKB5c4` 
+# Flag:
+`bpUrmh8hkya7p3ST5vhAzWTuUrJKB5c4` 
