@@ -12,7 +12,7 @@ Bài lab tương tự Lab 13 tuy nhiên lab 14 này chúng ta có thể dựa v�
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/adb33783-e58c-4367-9a37-30fcad0e74e4)
 
-Password `ifnvsk2j5kw3vcgvcx8a`. BURP-COLLABORATOR-SUBDOMAIN `132nrnuma5r6beouohx5428rdija7z.oastify.com`
+Password `ifnvsk2j5kw3vcgvcx8a`. BURP-COLLABORATOR-SUBDOMAIN `.266ouoxnd6u7efrvri0673bsgjmaaz.oastify.com` được trả về
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/882b3681-468d-4728-b8ae-744548c042d9)
 
