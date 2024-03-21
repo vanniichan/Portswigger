@@ -20,7 +20,9 @@ Thử lần đầu là Oracle nên được luôn, lưu ý phần bôi xanh
 
 Sử dụng `Burp Collaborator` để thế vào
 
+![image](https://github.com/vanniichan/Portswigger/assets/112863484/d6eedfda-9ad6-459f-a4bc-1abaf30f76b2)
 
+Send Repeat 
 
 # Flag: 
 
