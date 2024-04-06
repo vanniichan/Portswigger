@@ -12,7 +12,7 @@ Sau 3 lần thử sẽ bị block 1 phút, sau đó login thành công thì nó 
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/660c8f28-5325-4624-89a5-7e08b0810344)
 
-Chúng ta sẽ dùng `Pitchfork` và dùng [payload]() sử dụng ở trên
+Chúng ta sẽ dùng `Pitchfork` và dùng [payload](https://github.com/vanniichan/Portswigger/blob/main/Authen%20Vuln/Lab_6/Lab-6_Payload.py) sử dụng ở trên
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/d0bce7ba-1e4a-418f-a13e-57e101d3db55)
 
