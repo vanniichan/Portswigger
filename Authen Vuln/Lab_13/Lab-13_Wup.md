@@ -11,7 +11,7 @@ Bài này login vào có 1 số điểm cần lưu ý:
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/440ddbb5-53bc-47f9-8628-8ebd15c7878d)
 
-Từ lưu ý trên, sẽ ra sao nếu ta nhồi 100 mật khẩu vào ?. Sử dụng [payload]() để ốp vào
+Từ lưu ý trên, sẽ ra sao nếu ta nhồi 100 mật khẩu vào ?. Sử dụng [payload](https://github.com/vanniichan/Portswigger/blob/main/Authen%20Vuln/Lab_13/Lab-13_Payload.py) để ốp vào
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/e1ed49fe-edb2-45cb-9780-578fafadec8b)
 
