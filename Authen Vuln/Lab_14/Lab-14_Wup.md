@@ -23,8 +23,13 @@ Cuối cùng là set cho nó chạy từng request 1:
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/7182b198-8ebf-4f65-bb2a-eb357abdff2b)
 
-Tiếp theo là ngồi đợi =)), khá lâu
+Tiếp theo là ngồi đợi =)), khá lâu, akwy hơn 1 tiếng
 
+![image](https://github.com/vanniichan/Portswigger/assets/112863484/7aa4515b-93cb-4e97-8ef9-53f499bb7219)
+
+Lấy được session 
+
+![image](https://github.com/vanniichan/Portswigger/assets/112863484/642c482b-9ffe-4330-818c-848d6c2093ae)
 
 # Flag:
 
