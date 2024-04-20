@@ -27,9 +27,11 @@ Tiếp theo là ngồi đợi =)), khá lâu, akwy hơn 1 tiếng
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/7aa4515b-93cb-4e97-8ef9-53f499bb7219)
 
-Lấy được session 
+Lấy được session từ respond
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/642c482b-9ffe-4330-818c-848d6c2093ae)
 
 # Flag:
+
+![image](https://github.com/vanniichan/Portswigger/assets/112863484/9a3bf2b1-c689-4dd5-82c7-72fbd909088f)
 
