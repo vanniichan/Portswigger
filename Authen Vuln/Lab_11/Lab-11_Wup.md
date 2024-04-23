@@ -20,6 +20,10 @@ Thay username = carlos
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/9c3f02f2-b1a0-4c97-a1b0-601f6b7f9697)
 
+Quay về exploit server để bắt được gói tin như bên dưới và lấy được 
+
+![image](https://github.com/vanniichan/Portswigger/assets/112863484/c5b8fedf-884b-40b9-b1e3-79cf464d9aeb)
 
 # Flag:
 
+![image](https://github.com/vanniichan/Portswigger/assets/112863484/e29eef9c-25ac-4313-9c12-7f24bd61f72c)
