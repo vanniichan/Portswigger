@@ -18,7 +18,7 @@ Từ đây nghĩ đến brute-force cookie này, tuy nhiên thử lại xem li�
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/352d341e-0195-4e80-89a1-44222a0570a3)
 
-Giờ thì brute-force bằng [payload]() chuyển password sang md5
+Giờ thì brute-force bằng [payload](https://github.com/vanniichan/Portswigger/blob/main/Authen%20Vuln/Lab_9/Lab-9_Payload.py) chuyển password sang md5
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/7380d03b-4b96-4e0b-af47-cb67e9aea75f)
 
