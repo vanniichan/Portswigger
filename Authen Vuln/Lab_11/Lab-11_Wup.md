@@ -22,7 +22,7 @@ Thay username = carlos
 
 Quay về exploit server để bắt được gói tin như bên dưới và lấy được 
 
-![image](https://github.com/vanniichan/Portswigger/assets/112863484/c5b8fedf-884b-40b9-b1e3-79cf464d9aeb)
+![image](https://github.com/vanniichan/Portswigger/assets/112863484/f61696ce-69a1-4469-8595-3b607e167157)
 
 # Flag:
 
