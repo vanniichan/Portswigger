@@ -10,7 +10,7 @@ To assist with your exploit, you can assume that the simulated user will press t
 
 Bài lab này khá là khó hiểu và cũng ít khi xảy ra, một số trường hợp phải phụ thuộc vào trình duyệt và hệ điều hành để tiến hành khai thác được lỗ hổng này như bài lab này phải chạy bằng Chrome
 
-Payload sẽ như sau: `href='https://0ad000cd04d99a1a84e141660087007d.web-security-academy.net/?randome=test'	onclick='alert(1)'	accesskey='x'/%3e'/>`
+Payload sẽ như sau: `/?%27accesskey=%27x%27onclick=%27alert()`
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/4d7b9e0a-595a-49bb-a20c-b0b375f8c4d2)
 
@@ -21,3 +21,5 @@ Khi sử dụng phím tắt ( T đang dùng chrome ) ` Alt+ Shift+ X ` nó sẽ 
 # Flag: 
 
 Lỗi luôn : ) không báo solved bài lab
+
+![image](https://github.com/vanniichan/Portswigger/assets/112863484/75006894-da69-4946-b0aa-8153217b9333)
