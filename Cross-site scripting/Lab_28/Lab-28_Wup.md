@@ -52,7 +52,7 @@ window + '' nói chung sẽ thanh thế để gọi x
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/01c36f77-8dfd-462c-98ac-49ad5808e77d)
 
-Như vậy ta phải inject thêm tham số vào hàm `fetch()`, đầu tiên sử dụng `&` để nối tiếp biến tiếp, sử dụng `'` để phá vỡ cấu trúc hàm `fetch()` tuy nhiên để nó vẫn hoạt động đúng cách ta sẽ dùng `}` và sau đó dùng `,` để tiếp tục truyền thêm tham số vào
+Như vậy ta phải inject thêm tham số vào hàm `fetch()`, đầu tiên sử dụng `&` để nối tiếp biến và nó sẽ không phá vỡ cấu trúc của trang, sử dụng `'` để kết thúc phần `method và body`. Ta sẽ dùng `}`để kết thúc và sau đó dùng `,` để tiếp tục truyền thêm tham số vào
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/5c33b488-4cda-4e27-9dca-4157d862eb1a)
 
