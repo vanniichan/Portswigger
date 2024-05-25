@@ -4,7 +4,7 @@ This lab contains a reflected cross-site scripting vulnerability in the search b
 
 # Recon: 
 
-Bài lab này được xử lý input trong dấu ` . Tham khảo trên [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) và [Portswigger](https://portswigger.net/web-security/cross-site-scripting/contexts ta có thể chèn thêm `${js}` mà không cần phải thoát khỏi ` này
+Bài lab này được xử lý input trong dấu \` . Tham khảo trên [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) và [Portswigger](https://portswigger.net/web-security/cross-site-scripting/contexts) ta có thể chèn thêm `${js}` mà không cần phải thoát khỏi ` này
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/64a382cb-6483-4b72-9805-d659908d817e)
 
