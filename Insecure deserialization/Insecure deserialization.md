@@ -37,6 +37,13 @@ _____ 1 số hình thức khi thác phổ biến: ______
   + __toString() : cũng là hàm sẽ được tự động gọi.
 
    Còn [rất nhiều](https://www.php.net/manual/en/language.oop5.magic.php) magic method khác
+- Phar-deserialize:
+
+Ở đây có hai Magic method có thể trigger được lỗi Phar Deserialization mà ta cần quan tâm đến là:
+
+`__wakeup()`:  Được gọi khi một đối tượng được deserialize
+
+`__destruct()`: Được gọi khi một kịch bản PHP kết thúc hoặc một đối tượng không còn được dùng trong code nữa và bị hủy bỏ
 
 - Thực hành qua các bài lab của [Portswigger](https://portswigger.net/web-security/all-labs)
 
