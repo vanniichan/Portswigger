@@ -9,6 +9,10 @@
 - Insecure deseralize là khi dữ liệu người dùng có thể kiểm soát và deserialize lên web. Điều này cho phép attacker thao túng các đối tượng được serialize để truyền dữ liệu có hại vào ứng dụng. Thậm 
 chí có thể thay đổi cả đối tượng và thuộc tính của nó.
 
+-  Đối tượng cần tấn công phải có lớp sử dụng `Magic method`
+
+-  Tìm được POP chain, hay chính là có thể tùy chỉnh được các đoạn code trong quá trình hàm unserialize() được gọi
+
 - Chủng lỗi này thuộc **top 8 OSWAP** và cũng thể hiểu như là **object inject** .
 
 <h2>2. Nguyên nhân và impact:</h2>
@@ -44,4 +48,8 @@ _____ 1 số hình thức khi thác phổ biến: ______
 
 - Tránh việc thuộc tính của class chính bị gọi đến hay các magic method bị lợi dụng ở các class từ các đối tượng khác nhau.
 
+<h2>5. References:</h2>
 
+[LINK](https://portswigger.net/web-security/deserialization)
+[LINK](https://learn.cyberjutsu.io/courses/take/web-pentration-testing-102/pdfs/53380408-tai-li-u-pdf-kem-theo)
+[LINK](https://sec.vnpt.vn/2019/08/ky-thuat-khai-thac-lo-hong-phar-deserialization/)
