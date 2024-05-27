@@ -36,7 +36,7 @@ private void readObject(ObjectInputStream inputStream) throws IOException, Class
     }
 ```
 
-Tiếp theo là tạo [Payload]() thực hiện SQLi thông qua tham số `id`.
+Tiếp theo là tạo [Payload](https://github.com/vanniichan/Portswigger/tree/main/Insecure%20deserialization/Lab_8/Payload) thực hiện SQLi thông qua tham số `id`.
 
 `ProductTemplate prodTemplate = new ProductTemplate("' UNION SELECT NULL -- ");`
 
