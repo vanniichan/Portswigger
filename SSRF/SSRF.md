@@ -24,7 +24,12 @@
   + 017700000001 (octal)
 
 - [Video](https://www.youtube.com/watch?v=R9pJ2YCXoJQ)
-  
+
+- Lý do lại gọi về mạng cục bộ :
+  + Việc kiểm tra kiểm soát truy cập có thể được triển khai trong một thành phần khác nằm phía trước máy chủ ứng dụng. Khi kết nối được thực hiện trở lại máy chủ, việc kiểm tra sẽ bị bỏ qua.
+  + Với mục đích khắc phục thảm họa, ứng dụng có thể cho phép truy cập quản trị mà không cần đăng nhập đối với bất kỳ người dùng nào đến từ máy cục bộ. Điều này cung cấp một cách để quản trị viên khôi phục hệ thống nếu họ mất thông tin đăng nhập. Điều này giả định rằng chỉ người dùng hoàn toàn đáng tin cậy mới đến trực tiếp từ máy chủ.
+  + Giao diện quản trị có thể nghe trên một số cổng khác với ứng dụng chính và người dùng có thể không truy cập trực tiếp được.
+
 # Prevent
 
 - Input của người dùng phải được validate
