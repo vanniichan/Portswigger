@@ -3,6 +3,7 @@
 
 - Là lỗ hổng dựa vào đường dẫn để đọc được file của 
 - Nằm ở mục Inject trong Top 10 OSWAP
+- utf-16le dcode `\xff\x2e\xff\x2e` là  `..`
 
 # Finding Vuln
 1. Công thức:
