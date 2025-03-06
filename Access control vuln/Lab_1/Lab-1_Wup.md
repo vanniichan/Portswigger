@@ -1,16 +1,18 @@
-# Target Goal: 
+# Target Goal
+Lab này có admin panel không được bảo vệ cẩn thận. Giải quyết lab bằng cách xóa người dùng `Carlos`.
 
-This lab has an unprotected admin panel.
+# Analysis
+Theo yêu cầu bài lab thì có một admin panel không được bảo vệ cẩn thận nên có thể nó path truy cập vào nó sẽ bị public. Một trong những bước đầu tiên trước khi brute-force là truy cập vào `robots.txt`
 
-Solve the lab by deleting the user `carlos`.
+> File robots.txt là một tập tin văn bản đơn giản có dạng đuôi mở rộng txt. Tệp này chứa một nhóm các tiêu chuẩn web quy định cách Robot Web (hoặc Robot của các công cụ tìm kiếm) thu thập dữ liệu trên web, truy cập, index nội dung và cung cấp nội dung đó cho người dùng.
 
-# Analysis : 
+Ảnh dưới là ví dụ về tệp `robots.txt` đơn giản, chỉ ra rằng  người dùng có tên `Mallorybot` không được phép thu thập bất kỳ trang nào của trang web và các user khác không thể thu thập nhiều hơn một trang sau mỗi 20 giây và không được phép thu thập thư mục `/secret`
 
-Bài lab này ngoài cách brute-force path ra thì dùng `robots.txt` cũng đã phát hiện được path ẩn
+![image](https://hackmd.io/_uploads/BJGECtIoJe.png)
 
-![image](https://github.com/user-attachments/assets/52a307a4-f206-4e8d-9c12-2e1e2dd7ece0)
+Quay lại bài lab, truy cập vào `/administrator-panel` và hoàn thành bài lab 
 
-Truy cập vào `/administrator-panel` và xóa user là xong
+![image](https://hackmd.io/_uploads/rJlWpt8jJl.png)
 
 # Flag:
 
