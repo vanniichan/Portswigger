@@ -104,7 +104,10 @@ Nếu request đến trong race window giữa bước tạo user và set api_key
 ## Detecting Race conditions
 - Các request lặp lại một cách nhanh chóng từ cùng một nguồn tới một endpoint (ví dụ: API rút tiền, thay đổi quyền) là một trong các dấu hiệu để biết SSRF attack đang xảy ra
 - Kiểm tra thời gian của các sự kiện để phát hiện các hoạt động trùng lặp hoặc xung đột. Ví dụ: nếu hai giao dịch ghi đè lên cùng một trường dữ liệu mà không có kiểm soát thứ tự
-
+- Race condition có thể gây ra tranh chấp tài nguyên, dẫn đến CPU hoặc bộ nhớ tăng đột biến. Ta có thể giám sát các chỉ số hiệu suất để phát hiện dấu hiệu của cuộc tấn công như:
+    + CPU hoặc memory usage tăng bất thường trùng với thời điểm có nhiều request tới một endpoint
+    + Response time của ứng dụng tăng đột ngột do các luồng bị treo (deadlock)
+  
 Giả sử trong Splunk ta sẽ có thể trace log bằng query sau
 ```
 index=app_logs sourcetype=transaction user_id="attacker123" endpoint="/withdraw" | stats count by user_id, timestamp | where count > 50 AND time_span < 1s
